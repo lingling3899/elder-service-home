@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="草本心語 — 關於、資料來源同免責" />
+  <meta name="theme-color" content="#1b4332" />
+  <title>關於｜草本心語</title>
+  <link rel="stylesheet" href="../assets/css/site.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">跳去內容</a>
+  <div class="phone-shell">
+    <header class="header">
+      <div class="header-top">
+        <a class="brand" href="../">
+          <h1>草本心語</h1>
+          <p class="sub">關於同免責</p>
+        </a>
+        <div class="header-actions">
+          <button type="button" class="chip-btn" id="btnLargeText" aria-pressed="false" title="放大字體">大字</button>
+        </div>
+      </div>
+      <nav class="site-nav" aria-label="主要導航">
+        <a href="../">搵服務</a>
+        <a href="../ai/">AI 問症</a>
+        <a href="../topics/">健康專題</a>
+        <a href="./" aria-current="page">關於</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="page-hero" aria-labelledby="about-title">
+        <h2 id="about-title">關於草本心語</h2>
+        <p>用社署公開資料幫長者同家人搵附近服務；字大、步驟少、可一鍵致電。</p>
+      </section>
+
+      <div class="prose">
+        <h3>我哋做咩</h3>
+        <p>首頁「搵服務」整理社會福利署公開名冊（安老院舍、日間護理、社區照顧服務券認可單位），方便按地區、類型同關鍵字篩選。</p>
+        <p>健康專題提供防跌、出院復康、腦部篩檢嘅<strong>精簡一般資訊</strong>。AI 問症暫時係占位頁，尚未接上 LLM。</p>
+
+        <h3>資料來源</h3>
+        <ul>
+          <li>安老院舍 — <a href="https://elderlyinfo.swd.gov.hk/sites/ltc-swd/files/rche_rsp_list.xml" target="_blank" rel="noopener noreferrer">長者資訊網 XML</a></li>
+          <li>日間護理 — <a href="https://www.swd.gov.hk/datagovhk/elderly/List-of-DE-DCU.csv" target="_blank" rel="noopener noreferrer">List-of-DE-DCU.csv</a></li>
+          <li>上門照顧／社區支援 — <a href="https://www.swd.gov.hk/datagovhk/elderly/list-of-ccsv-rsp.csv" target="_blank" rel="noopener noreferrer">社區照顧券認可單位 CSV</a></li>
+        </ul>
+        <p>本站<strong>唔爬網站</strong>、<strong>唔發明</strong>機構或電話。長者中心、青少年中心（長者服務）暫時未有同等開放檔，介面會誠實顯示空狀態。</p>
+
+        <h3>更新名冊（本機）</h3>
+        <p>人手下載最新官方檔放入 <code>data/</code>，再執行 <code>python3 build_places.py</code> 產出 <code>places.js</code>。</p>
+
+        <h3>免責聲明</h3>
+        <p>名冊可能滯後或不完整；請以官方網站為準並自行致電確認。本站<strong>唔構成醫療、護理或入院建議</strong>。緊急請打 <strong>999</strong>。</p>
+      </div>
+
+      <div class="cta-block">
+        <a class="btn-primary" href="../">返去搵服務</a>
+        <a class="btn-ghost" href="https://elderlyinfo.swd.gov.hk/tc/ltc_search/rcs" target="_blank" rel="noopener noreferrer">社署安老院搜尋</a>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <nav class="footer-nav" aria-label="頁腳導航">
+        <a href="../">搵服務</a>
+        <a href="../ai/">AI 問症</a>
+        <a href="../topics/">健康專題</a>
+        <a href="./">關於／免責</a>
+      </nav>
+      <p><strong>免責：</strong>本站唔構成醫療建議。緊急請打 <strong>999</strong>。</p>
+      <p style="margin-top:10px">© 草本心語 · 靜態自建版</p>
+    </footer>
+  </div>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>
